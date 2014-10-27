@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inlämning 1</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="confirm">Confirm</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="emptyField">One or more fields empty</string>
+    <string name="userCreated">User created</string>
+    <string name="userAlreadyExist">User already created</string>
+    <string name="date">Date</string>
+    <string name="yyyymmdd">YYYY-MM-DD</string>
+    <string name="title">Title</string>
+    <string name="food">Food</string>
+    <string name="freetime">Free-time</string>
+    <string name="travel">Travel</string>
+    <string name="living">Living</string>
+    <string name="other">Other</string>
+    <string name="add">Add</string>
+    <string name="addIncome">Add Income</string>
+    <string name="addOutcome">Add Outcome</string>
+    <string name="salary">Salary</string>
+    <string name="added">Added</string>
+    <string name="welcome">Welcome</string>
+    <string name="viewList">View List</string>
+    <string name="excessDeficit">Excess/Deficit:</string>
+    <string name="totalOutcome">Total Outcome:</string>
+    <string name="totalIncome">Total Income:</string>
+    <string name="category">Category</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount</string>
+    <string name="image">image</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick">Pick</string>
+    <string name="remove">Remove</string>
+    <string name="filter">Filter</string>
+
+</resources>

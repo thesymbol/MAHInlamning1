@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/fragment_outcome_form"
+    tools:context="se.orw.inlamning1.OutcomeFormFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/addOutcome"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/title"
+        android:id="@+id/etTitle"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="@string/yyyymmdd"
+        android:id="@+id/etDate"
+        android:layout_below="@+id/etTitle"
+        android:layout_alignStart="@id/etTitle"
+        android:focusable="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:text="@string/pick"
+        android:id="@+id/btnDatePicker"
+        android:layout_toRightOf="@id/etDate"
+        android:layout_alignTop="@id/etDate"
+        android:layout_above="@+id/etAmount" />
+
+    <EditText
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/amount"
+        android:id="@+id/etAmount"
+        android:layout_alignStart="@id/etDate"
+        android:layout_below="@+id/etDate"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/etAmount"
+        android:layout_alignEnd="@id/etAmount"
+        android:id="@+id/rgCategory"
+        android:layout_below="@+id/etAmount"
+        android:layout_centerHorizontal="true">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food"
+            android:id="@+id/rbFood"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/freetime"
+            android:id="@+id/rbFreetime"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/travel"
+            android:id="@+id/rbTravel"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/living"
+            android:id="@+id/rbLiving"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:id="@+id/rbOther"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_below="@id/rgCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:id="@+id/fragment_list_in_outcome"
+    tools:context="se.orw.inlamning1.ListFragment">
+
+    <EditText
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/etStartDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/yyyymmdd"
+        android:focusable="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text="@string/pick"
+        android:id="@+id/btnStartDateSelect"
+        android:layout_alignTop="@id/etStartDate"
+        android:layout_toRightOf="@id/etStartDate" />
+
+    <EditText
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/etEndDate"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etStartDate"
+        android:hint="@string/yyyymmdd"
+        android:focusable="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:text="@string/pick"
+        android:id="@+id/btnEndDateSelect"
+        android:layout_toRightOf="@id/etEndDate"
+        android:layout_alignTop="@id/etEndDate"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvIncomeOutcome"
+        android:layout_below="@+id/etEndDate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter"
+        android:id="@+id/btnFilter"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/btnStartDateSelect"
+        android:layout_marginLeft="5sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/btnStartDateSelect"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/btnReset"
+        android:layout_alignLeft="@id/btnFilter"
+        android:layout_below="@id/btnFilter"
+        android:layout_alignEnd="@+id/btnFilter"
+        android:layout_alignBottom="@id/btnEndDateSelect"
+        android:layout_alignTop="@id/btnEndDateSelect"/>
+</RelativeLayout>

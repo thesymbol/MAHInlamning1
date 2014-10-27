@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    tools:context="se.orw.inlamning1.WelcomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:id="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rlIncome"
+        android:layout_below="@id/tvWelcome">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Income"
+            android:id="@+id/btnAddIncome"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Outcome"
+            android:id="@+id/btnAddOutcome"
+            android:layout_alignTop="@id/btnAddIncome"
+            android:layout_toRightOf="@id/btnAddIncome"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewList"
+        android:id="@+id/btnViewList"
+        android:layout_below="@id/rlIncome"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalIncome"
+        android:id="@+id/tvTotalIncome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35sp"
+        android:layout_below="@id/btnViewList"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalOutcome"
+        android:id="@+id/tvTotalOutcome"
+        android:layout_below="@id/tvTotalIncome"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/excessDeficit"
+        android:id="@+id/tvExcessDeficit"
+        android:layout_below="@+id/tvTotalOutcome"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="150sp"
+        android:layout_height="fill_parent"
+        android:id="@+id/graphLayout"
+        android:layout_below="@+id/tvExcessDeficit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        </LinearLayout>
+
+
+</RelativeLayout>
